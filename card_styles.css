@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+   background-image: url(/images/pattern-background-mobile.svg);
+   padding:25px;
+   font-size: 16px;
+   font-family: 'Red Hat Display', sans-serif; 
+  }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.card__hero {
+  width: 100%;
+}
+
+.card__image {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card__descr {
+  text-align: center;
+  background-color: #fff;
+}
+
+.card__title {
+  margin:15px 0;
+  font-weight: 900;
+}
+
+.card__text {
+  font-weight: 500;
+  color:#98A0AE;
+  
+}
+
+.card__plans {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+  padding: 25px 0;
+}
+
+.card__border {
+  width: 85%;
+  border-radius: 25px;
+  background: #F8F8FE;
+  padding: 7px; 
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__planinfo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.card-btn {
+  width:100%;
+  background: #fff;
+  padding-bottom: 29px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-btn__btn {
+   width: 50%;
+   margin: 10px 0;
+}
+
+.card-btn--active{
+  font-weight: 700;
+  width: 85%;
+  background: #382AE1;
+  color: #fff;
+  padding: 10px;
+  border: none; 
+  border-radius: 15px ;
+  cursor: pointer;
+}
+
+.card-btn--disable {
+  border: none;
+  background-color: #fff;
+  color: #767C91;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.card-btn--active:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.card-btn--disable:hover {
+  color: red;
+}
+
+/* media queries */
+
+@media (min-width: 1100px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 30%;
+  }
+}
